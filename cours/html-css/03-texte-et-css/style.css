@@ -19,3 +19,11 @@ li {
     font-weight: bold;
     color: seagreen;
 }
+
+.deconseillee {
+    color: red
+}
+
+em {
+    font-family: fantasy;
+}
