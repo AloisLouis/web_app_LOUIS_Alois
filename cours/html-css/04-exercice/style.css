@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-sherif;
+    color: darkslategray;
+}
+
+h1 {
+    color: steelblue;
+}
+
+h2 {
+    color: teal;
+}
+
+li {
+    margin-bottom: 4px;
+    color: black;
+}
+
+#race-vedette {
+    color: purple;
+}
+
+#autre-race {
+    color: chocolate;
+}
+
+#couleur {
+    color: gold;
+}
+
+.recommandee {
+    font-weight: bold;
+    color: seagreen;
+}
+
+.deconseillee {
+    color: red
+}
+
+em {
+    font-family: fantasy;
+}
