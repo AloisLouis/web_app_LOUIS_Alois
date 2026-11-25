@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acheter un jeu vidéo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#choisir">Choisir son jeu</a></li>
+            <li><a href="achat.html">Acheter un jeu vidéo</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/Jeu_vidéo">En savoir plus (Wikipédia)</a></li>
+        </ul>
+    </nav>
+    <h1>Acheter un jeu vidéo</h1>
+    <p>L'achat d'un jeu vidéo est <strong>non remboursable</strong>. À choisir avec prudence.</p>
+    <ol>
+        <li>Savoir si ce type de jeu vous convient.</li>
+        <li>Savoir si votre PC peut supporter le jeu.</li>
+        <li>Assurer vous que le jeu n'est pas une arnaque</li>
+    </ol>
+    <h2>Demande d'achat</h2>
+    <form action="traitement.php" method="post">
+        <p>
+            <label for="nom">Nom complet</label>
+            <input type="text" id="nom" name="nom" required>
+        </p>
+        <p>
+            <label for="email">Adresse email</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone">
+        </p>
+        <p>
+            <label for="ville">Ville</label>
+            <input type="text" id="ville" name="ville">
+        </p>
+        <p>
+            <label for="visite">Numéro de la carte bancaire</label>
+            <input type="number" id="carte" name="carte" min="0000000000000000" max="9999999999999999" required>
+        </p>
+        <p>
+            <label for="jeu">Jeu souhaité</label>
+            <select id="jeu" name="jeu">
+                <option value="cuphead">Cuphead</option>
+                <option value="outlast">Outlast</option>
+                <option value="it-takes-two">It Takes Two</option>
+                <option value="zelda">The Legend of Zelda: Tears of the Kingdom</option>
+                <option value="autre">Autre</option>
+            </select>
+        </p>
+        <p>
+            Avez-vous déjà joué à un jeu vidéo ?
+            <label for="deja-oui">Oui</label>
+            <input type="radio" id="deja-oui" name="deja_chat" value="oui">
+            <label for="deja-non">Non</label>
+            <input type="radio" id="deja-non" name="deja_chat" value="non">
+            <label for="deja-jsp">Je ne sais pas</label>
+            <input type="radio" id="deja-jsp" name="deja_chat" value="jsp">
+        </p>
+        <p>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </p>
+        <p>
+            <input type="checkbox" id="contact" name="contact">
+            <label for="contact">J'accepte d'être contacté(e) par téléphone</label>
+        </p>
+        <p>
+            <button type="submit">Envoyer la demande</button>
+        </p>
+    </form>
+</body>
+
+</html>
